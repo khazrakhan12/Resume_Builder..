@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(10, 106, 119, 0.803)
+  }
+  
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #baeca3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  textarea, input[type="text"], 
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #488356;
+    color: rgb(19, 24, 23);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a6dda6;
+  }
+  
+  #resume-display {
+    margin-top: 20px;
+  }
+
+  
+  

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Resume Builder</h1>
+    <br> 
+    <br>
+
+    <div class="mainDiv">
+      <form>
+          <div class="headline">
+              <h2>Personal Information</h2>
+          </div>
+    <form id="resume-form">
+      <div class="input-group">
+        <div class="input-label">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="input-label">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" required>
+        </div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="contact number">Contact Number:</label>
+      <input type="text" id="contact number" name="contact number" required>
+
+      <div class="input-label">
+        <label for="address">Address</label>
+        <input class="input" id="address" type="text" required>
+    </div>
+
+      <div class="textarea-label">
+        <label for="about">About</label>
+        <textarea id="about" required></textarea>
+    </div>
+
+      <h2>Education</h2>
+      <label for="education">Education:</label>
+      <textarea id="education" name="education" required></textarea>
+
+      <div class="input-label">
+        <label for="edu-degree-1">Degree</label>
+        <input type="text" id="edu-degree-1" required>
+    </div>
+    <div class="headline">
+      <h2>Languages</h2>
+  </div>
+
+  <div class="language-section">
+      <div class="input-group">
+          <div class="input-label">
+              <label for="language-1">Language</label>
+              <input type="text" id="language-1"  required>
+          </div>
+
+      <h2>Work Experience</h2>
+      <div class="input-label">
+        <label for="job-title-1">Job Title</label>
+        <input type="text" id="job-title-1"  required>
+    </div>
+    <div class="input-label">
+        <label for="company-desc-1">Company & Description</label>
+        <input type="text" id="company-desc-1"  required>
+    </div>
+    <div class="input-label">
+        <label for="years-1">Years</label>
+        <input type="text" id="years-1"  required>
+    </div>
+      <h2>Skills</h2>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" required></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-display" class="hidden">
+      <h2>Generated Resume</h2>
+      <div id="resume-content"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
